@@ -1,0 +1,20 @@
+<h2><%= gettext "Show post" %></h2>
+
+<ul>
+
+  <li>
+    <strong><%= gettext "Title" %>:</strong>
+    <%= @post.title %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Body" %>:</strong>
+    <%= @post.body %>
+  </li>
+
+</ul>
+
+<%= if current_user = @conn.assigns[:current_user] do %>
+     <span><%= link gettext("Back"), to: user_post_path(@conn, :index, @locale, @user), class: "btn btn-default btn-xs" %></span>
+     <span><%= link gettext("Edit"), to: user_post_path(@conn, :edit, @locale, @user, @post), class: "btn btn-default btn-xs" %></span>
+<% end %>

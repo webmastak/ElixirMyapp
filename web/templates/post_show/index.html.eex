@@ -1,0 +1,14 @@
+<h2><%= gettext "Listing posts" %></h2>
+
+<table class="table">
+  <tbody>
+<%= for post <- @posts do %>
+    <tr>
+      <td><%= link post.title, to: post_show_path(@conn, :show, @locale, post) %></td>
+    </tr>
+    <tr>
+      <td><%= post.body %></td>
+    </tr>
+<% end %>
+  </tbody>
+</table>

@@ -1,0 +1,126 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: ru\n"
+
+msgid "can't be blank"
+msgstr "не может быть пустым"
+
+msgid "has already been taken"
+msgstr "уже выполнено"
+
+msgid "is invalid"
+msgstr "недействителен"
+
+msgid "must be accepted"
+msgstr "необходимо принять"
+
+msgid "has invalid format"
+msgstr "имеет недопустимый формат"
+
+msgid "has an invalid entry"
+msgstr "имеет недопустимую запись"
+
+msgid "is reserved"
+msgstr "зарезервировано"
+
+msgid "does not match confirmation"
+msgstr "не соответствует подтверждению"
+
+msgid "is still associated with this entry"
+msgstr "все еще ассоциируется с этой записью"
+
+msgid "are still associated with this entry"
+msgstr "все еще связаны с этой записью"
+
+msgid "should be %{count} character(s)"
+msgid_plural "should be %{count} character(s)"
+msgstr[0] "должно быть %{count} символ(ы)"
+msgstr[1] "должно быть %{count} символ(ы)"
+
+msgid "should have %{count} item(s)"
+msgid_plural "should have %{count} item(s)"
+msgstr[0] "должны были через %{count} товар(ов)"
+msgstr[1] "должны были через %{count} товар(ов)"
+
+msgid "should be at least %{count} character(s)"
+msgid_plural "should be at least %{count} character(s)"
+msgstr[0] "должно быть как минимум %{count} символов"
+msgstr[1] "должно быть как минимум %{count} символов"
+
+msgid "should have at least %{count} item(s)"
+msgid_plural "should have at least %{count} item(s)"
+msgstr[0] "должны иметь по крайней мере через %{count} товар(ов)"
+msgstr[1] "должны иметь по крайней мере через %{count} товар(ов)"
+
+msgid "should be at most %{count} character(s)"
+msgid_plural "should be at most %{count} character(s)"
+msgstr[0] "должен быть максимум через %{count} символ(ы)"
+msgstr[1] "должен быть максимум через %{count} символ(ы)"
+
+msgid "should have at most %{count} item(s)"
+msgid_plural "should have at most %{count} item(s)"
+msgstr[0] "должны были максимум через %{count} товар(ов)"
+msgstr[1] "должны были максимум через %{count} товар(ов)"
+
+msgid "must be less than %{number}"
+msgstr "должно быть меньше, чем %{номер}"
+
+msgid "must be greater than %{number}"
+msgstr "должно быть больше, чем %{номер}"
+
+msgid "must be less than or equal to %{number}"
+msgstr "должна быть меньше или равна %{номер}"
+
+msgid "must be greater than or equal to %{number}"
+msgstr "должны быть больше или равны %{число}"
+
+msgid "must be equal to %{number}"
+msgstr "должна быть равна %{число}"
+
+#: web/templates/post/form.html.eex:4 web/templates/user/form.html.eex:4
+msgid "Oops, something went wrong! Please check the errors below."
+msgstr "Упс, что-то пошло не так! Пожалуйста, проверьте ошибки ниже."
+
+#: web/models/user.ex:27
+msgid "Email already taken"
+msgstr "Email уже занят"
+
+#: web/models/user.ex:26
+msgid "Password does not match"
+msgstr "Пароль не подходит"
+
+#: web/models/user.ex:28
+msgid "Username already taken"
+msgstr "Имя пользователя уже занято"
+
+#: web/models/user.ex:25
+msgid "Password must be at least 5 characters"
+msgstr "Пароль должен быть не менее 5 символов"
+
+#: web/templates/session/form.html.eex:4
+msgid "Invalid username or password combination!"
+msgstr "Неверный логин или пароль!"
+
+#: web/controllers/post_controller.ex:97
+msgid "Invalid user!"
+msgstr "Неверный логин!"
+
+#: web/controllers/user_controller.ex:88
+msgid "You are not authorized to create new users!"
+msgstr "Вы не имеете права создавать новых пользователей!"
+
+#: web/controllers/post_controller.ex:108
+msgid "You are not authorized to modify that post!"
+msgstr "Вы не уполномочены изменять этот пост!"
+
+#: web/controllers/user_controller.ex:76
+msgid "You are not authorized to modify that user!"
+msgstr "Вы не уполномочены изменять этого пользователя!"

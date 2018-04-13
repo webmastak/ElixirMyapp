@@ -1,0 +1,21 @@
+<%= form_for @changeset, @action, fn f -> %>
+  <%= if @changeset.action do %>
+    <div class="alert alert-danger">
+      <p><%= dgettext "errors", "Invalid username or password combination!" %></p>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= label f, gettext("Username"), class: "control-label" %>
+    <%= text_input f, :username, class: "form-control", value: "" %>
+  </div>
+
+  <div class="form-group">
+    <%= label f, gettext("Password"), class: "control-label" %>
+    <%= password_input f, :password, class: "form-control" %>
+  </div>
+
+  <div class="form-group">
+    <%= submit gettext("Submit"), class: "btn btn-primary" %>
+  </div>
+<% end %>

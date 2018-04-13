@@ -1,0 +1,19 @@
+<h2><%= gettext "Show post" %></h2>
+
+<ul>
+
+  <li>
+    <strong><%= gettext "Title" %>:</strong>
+    <%= @post.title %>
+  </li>
+
+  <li>
+    <strong><%= gettext "Body" %>:</strong>
+    <%= @post.body %>
+  </li>
+
+</ul>
+
+<span><%= link gettext("Back"), to: post_show_path(@conn, :index, @locale), class: "btn btn-default btn-xs" %></span>
+
+

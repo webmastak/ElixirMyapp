@@ -1,0 +1,5 @@
+<h2><%= gettext "Edit post" %></h2>
+
+<%= render "form.html", changeset: @changeset, action: user_post_path(@conn, :update, @locale, @user, @post) %>
+
+<span><%= link gettext("Back"), to: user_post_path(@conn, :index, @locale, @user) %></span>

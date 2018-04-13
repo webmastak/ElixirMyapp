@@ -1,0 +1,33 @@
+<h2><%= gettext "Listing posts" %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= gettext "Title" %></th>
+      <th><%= gettext "Body" %></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for post <- @posts do %>
+    <tr>
+      <td><%= post.title %></td>
+      <td><%= post.body %></td>
+
+      <td class="text-right">
+      <%= if current_user = @conn.assigns[:current_user] do %>
+        <span><%= link gettext("Show"), to: user_post_path(@conn, :show, @locale, post.user, post), class: "btn btn-default btn-xs" %></span>
+        <span><%= link gettext("Edit"), to: user_post_path(@conn, :edit, @locale, post.user, post), class: "btn btn-default btn-xs" %></span>
+        <span><%= link gettext("Delete"), to: user_post_path(@conn, :delete, @locale, post.user, post), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      <% end %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+
+<%= if current_user = @conn.assigns[:current_user] do %>
+  <span><%= link gettext("New post"), to: user_post_path(@conn, :new, @locale, current_user.id), class: "btn btn-primary" %></span>
+<% end %>
+

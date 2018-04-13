@@ -1,0 +1,163 @@
+## `msgid`s in this file come from POT (.pot) files.
+##
+## Do not add, change, or remove `msgid`s manually here as
+## they're tied to the ones in the corresponding POT file
+## (with the same domain).
+##
+## Use `mix gettext.extract --merge` or `mix gettext.merge`
+## to merge POT files into PO files.
+msgid ""
+msgstr ""
+"Language: ru\n"
+
+#: web/templates/page/index.html.old.eex:2
+msgid "Welcome to %{name}"
+msgstr "Приветствуем %{name}"
+
+#: web/templates/page/index.html.old.eex:3
+msgid "A productive web framework that does not compromise speed and maintainability."
+msgstr "Продуктивный веб-фреймворк, который не ставит под угрозу скорость и ремонтопригодность."
+
+#: web/templates/layout/app.html.eex:10
+msgid "Hello Myapp!"
+msgstr "Привет Приложение!"
+
+#: web/templates/post/edit.html.eex:5 web/templates/post/new.html.eex:5
+#: web/templates/post/show.html.eex:18 web/templates/post_show/show.html.eex:17
+#: web/templates/user/edit.html.eex:6 web/templates/user/new.html.eex:5
+#: web/templates/user/show.html.eex:17
+msgid "Back"
+msgstr "Назад"
+
+#: web/templates/user/edit.html.eex:1
+msgid "Edit user"
+msgstr "Редактирование пользователя"
+
+#: web/templates/post/form.html.eex:21 web/templates/session/form.html.eex:19
+#: web/templates/user/form.html.eex:33
+msgid "Submit"
+msgstr "Отправить"
+
+#: web/templates/post/index.html.eex:22 web/templates/user/index.html.eex:22
+msgid "Delete"
+msgstr "Удалить"
+
+#: web/templates/post/index.html.eex:21 web/templates/post/show.html.eex:19
+#: web/templates/user/index.html.eex:21 web/templates/user/show.html.eex:18
+msgid "Edit"
+msgstr "Редактировать"
+
+#: web/templates/user/form.html.eex:15 web/templates/user/index.html.eex:7
+#: web/templates/user/show.html.eex:11
+msgid "Email"
+msgstr "Почта"
+
+#: web/templates/user/index.html.eex:1
+msgid "Listing users"
+msgstr "Список пользователей"
+
+#: web/templates/user/index.html.eex:30 web/templates/user/new.html.eex:1
+msgid "New user"
+msgstr "Создать пользователя"
+
+#: web/templates/session/form.html.eex:14 web/templates/user/form.html.eex:21
+msgid "Password"
+msgstr "Пароль"
+
+#: web/templates/post/index.html.eex:20 web/templates/user/index.html.eex:20
+msgid "Show"
+msgstr "Смотреть"
+
+#: web/templates/session/form.html.eex:9 web/templates/user/form.html.eex:9
+#: web/templates/user/form.html.eex:10 web/templates/user/index.html.eex:6
+#: web/templates/user/show.html.eex:6
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: web/templates/user/show.html.eex:1
+msgid "Show user"
+msgstr "Просмотр пользователя"
+
+#: web/templates/post/form.html.eex:15 web/templates/post/index.html.eex:7
+#: web/templates/post/show.html.eex:11 web/templates/post_show/show.html.eex:11
+msgid "Body"
+msgstr "Пост"
+
+#: web/templates/post/edit.html.eex:1
+msgid "Edit post"
+msgstr "Редактирование поста"
+
+#: web/templates/layout/app.html.eex:28 web/templates/page/index.html.eex:1
+#: web/templates/page/index.html.old.eex:5 web/templates/post/index.html.eex:1
+#: web/templates/post_show/index.html.eex:1
+msgid "Listing posts"
+msgstr "Список постов"
+
+#: web/templates/post/index.html.eex:31 web/templates/post/new.html.eex:1
+msgid "New post"
+msgstr "Создать пост"
+
+#: web/templates/post/show.html.eex:1 web/templates/post_show/show.html.eex:1
+msgid "Show post"
+msgstr "Просмотр поста"
+
+#: web/templates/post/form.html.eex:9 web/templates/post/index.html.eex:6
+#: web/templates/post/show.html.eex:6 web/templates/post_show/show.html.eex:6
+msgid "Title"
+msgstr "Заголовок"
+
+#: web/controllers/user_controller.ex:25
+msgid "User created successfully."
+msgstr "Пользователь успешно создан."
+
+#: web/controllers/post_controller.ex:41
+msgid "Post created successfully."
+msgstr "Пост успешно создан."
+
+#: web/controllers/post_controller.ex:78
+msgid "Post deleted successfully."
+msgstr "Пост успешно удален."
+
+#: web/controllers/post_controller.ex:65
+msgid "Post updated successfully."
+msgstr "Пост успешно обновлен."
+
+#: web/controllers/user_controller.ex:65
+msgid "User deleted successfully."
+msgstr "Пользователь успешно удален."
+
+#: web/controllers/user_controller.ex:50
+msgid "User updated successfully."
+msgstr "Пользователь успешно обновлен."
+
+#: web/templates/user/form.html.eex:27
+msgid "Password confirmation"
+msgstr "Подтверждение пароля"
+
+#: web/templates/user/form.html.eex:22 web/templates/user/form.html.eex:28
+msgid "Password must be at least 5 characters"
+msgstr "Пароль должен быть не менее 5 символов"
+
+#: web/templates/layout/app.html.eex:32
+msgid "Log in"
+msgstr "Войти"
+
+#: web/templates/layout/app.html.eex:30
+msgid "Log out"
+msgstr "Выйти"
+
+#: web/templates/layout/app.html.eex:26
+msgid "Logged in as"
+msgstr "Вы вошли как"
+
+#: web/templates/session/new.html.eex:1
+msgid "Login"
+msgstr "Авторизация"
+
+#: web/controllers/session_controller.ex:27
+msgid "Signed out successfully!"
+msgstr "Вы успешно вышли из системы!"
+
+#: web/controllers/session_controller.ex:49
+msgid "Sign in successful!"
+msgstr "Вы успешно вошли в систему!"

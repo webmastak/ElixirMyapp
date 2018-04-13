@@ -1,0 +1,31 @@
+<h2><%= gettext "Listing users" %></h2>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th><%= gettext "Username" %></th>
+      <th><%= gettext "Email" %></th>
+
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+<%= for user <- @users do %>
+    <tr>
+      <td><%= user.username %></td>
+      <td><%= user.email %></td>
+
+      <td class="text-right">
+      <%= if current_user = @conn.assigns[:current_user] do %>
+        <span><%= link gettext("Show"), to: user_path(@conn, :show, @locale, user), class: "btn btn-default btn-xs" %></span>
+        <span><%= link gettext("Edit"), to: user_path(@conn, :edit, @locale, user), class: "btn btn-default btn-xs" %></span>
+        <span><%= link gettext("Delete"), to: user_path(@conn, :delete, @locale, user), method: :delete, data: [confirm: "Are you sure?"], class: "btn btn-danger btn-xs" %></span>
+      <% end %>
+      </td>
+    </tr>
+<% end %>
+  </tbody>
+</table>
+<%= if current_user = @conn.assigns[:current_user] do %>
+<span><%= link gettext("New user"), to: user_path(@conn, :new, @locale) %></span>
+<% end %>
